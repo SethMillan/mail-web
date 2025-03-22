@@ -15,14 +15,16 @@ body {
     margin: 0 auto;
     padding: 20px;
     height: 100%;
+    background-color: #b8b4b430;
 }
 
 .editor-container {
+    background-color: white;
     position: fixed;
     bottom: 0;
     right: 20px;
     width: 600px;
-    border: 1px solid #b8b4b4;
+    border: 2px solid #b8b4b4;
     border-radius: 4px;
     overflow: hidden;
 }
