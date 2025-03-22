@@ -1,20 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+}
 body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     font-family: Arial, sans-serif;
-    max-width: 800px;
     margin: 0 auto;
     padding: 20px;
+    height: 100%;
 }
+
+.editor-container {
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+    width: 600px;
+    border: 1px solid #b8b4b4;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
 
 .toolbar {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     margin-bottom: 10px;
-    padding: 5px;
+    padding: 15px;
     background-color: #f0f0f0;
     border-radius: 4px;
     
 }
+.btnSend{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 100px;
+    padding-left: 15px;
+    border-radius: 64px;
+    background-color: #3674B5;
+    color: white;
+    transition: ease-in-out 1s;
 
+}
+.btnSend p{
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+    display: none;
+
+}
+.btnSend:hover{
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    width: 150px;
+    transition: ease-in-out 1s;
+}
+.btnSend:hover p{
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+    display: block;
+}
 .toolbar button {
     margin-right: 20px;
     padding: 5px 10px;
@@ -36,13 +92,28 @@ body {
     overflow-y: auto;
 }
 
-.editor-container {
-    border: 1px solid #b8b4b4;
-    border-radius: 4px;
-    overflow: hidden;
+.editText{
+    display: flex;
+    align-items: center;
 }
-
 h1{
     text-align: center;
 }
-
+#destino, #asunto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    height: 35px;
+    border-radius: 4px;
+    width: 100%;
+    height: 60px;
+    box-sizing: border-box;
+    border: 1px solid #9e8e8e;
+    margin: 0;
+}
+.noText {
+    color: #9e8e8e;
+    width: 100%;
+    margin: 0;
+}

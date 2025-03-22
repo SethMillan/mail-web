@@ -1,31 +1,40 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editor de Texto Simple</title>
     <link rel="stylesheet" href="/assets/styles/style.css">
-    
-
-
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=send" />
 </head>
 
 <body>
-    <h1>Editor correo electronico</h1>
-    
     <div class="editor-container">
-        <div class="toolbar">
-            <button id="boldBtn" title="Negrita">B</button>
-            <button id="underlineBtn" title="Subrayado">U</button>
-            <button id="uppercaseBtn" title="Mayúsculas">A</button>
+        <div id="destino" contenteditable="true">
+            <p class="noText">Destinatarios</p>
         </div>
-        
+        <div id="asunto" contenteditable="true">
+            <p class="noText">Asunto</p>
+        </div>
         <div id="editor" contenteditable="true">
-            Escribe tu texto aquí .
+            <p class="noText">Escribe el contenido del mensaje</p>
         </div>
-    </div>
-    
+        <div class="toolbar">
+            <div id="btnSend" class="btnSend">
+                <p>Enviar</p>
+                <span class="material-symbols-outlined">send</span>
+            </div>
+            <div class="editText">
+                <button id="boldBtn" title="Negrita">B</button>
+                <button id="underlineBtn" title="Subrayado">U</button>
+                <button id="uppercaseBtn" title="Mayúsculas">A</button>
+            </div>
+        </div>
 
+    </div>
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>
