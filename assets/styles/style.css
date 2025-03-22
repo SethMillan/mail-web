@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.toolbar {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    
+}
+
+.toolbar button {
+    margin-right: 20px;
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+#editor {
+    width: 100%;
+    height: 300px;
+    padding: 10px;
+    border: 1px solid #9e8e8e;
+    border-radius: 4px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.editor-container {
+    border: 1px solid #b8b4b4;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+h1{
+    text-align: center;
+}
+
